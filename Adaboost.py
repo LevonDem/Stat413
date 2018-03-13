@@ -1,17 +1,8 @@
-
-# coding: utf-8
-
-# In[38]:
-
 import numpy as np
 import csv
 import random
 import math
 import os
-print(os.getcwd())
-#os.chdir('.\\5th year\\Stat413\\HW3')
-#print(os.getcwd())
-
 
 def prepare_data(valid_digits=np.array((6,5))):
     if len(valid_digits)!=2:
@@ -94,12 +85,5 @@ def my_Adaboost(X_train, Y_train, X_test, Y_test,num_iterations = 200):
 
 
 X_train,Y_train,X_test,Y_test=prepare_data()
-#alpha,beta,acc_train,acc_test=my_NN(X_train,Y_train,X_test,Y_test,num_hidden=20,num_iterations=500,learning_rate=1e-1)
-beta,acc_train,acc_test=my_SVM(X_train, Y_train, X_test, Y_test, lamb = 0.01,num_iterations = 500, learning_rate = 0.1)
 beta,acc_train,acc_test=my_Adaboost(X_train, Y_train, X_test, Y_test,num_iterations = 500)
-
-
-# In[ ]:
-
-
 
