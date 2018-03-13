@@ -1,15 +1,5 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Feb 19 17:04:25 2018
-
-@author: levon
-"""
 
 # As usual, a bit of setup
-import os
-os.chdir('C:\\Users\\levon\\Documents\\TA\\5th year\\Stat413\\HW3\\project2_answer\\')
-print(os.getcwd())
-
 from __future__ import print_function
 import time
 import numpy as np
